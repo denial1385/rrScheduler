@@ -1,28 +1,35 @@
 #-------------------------------------------------------------------------------
 # Name:        enqueue
-# Purpose:
+# Purpose:      This module deals with the queueing of processes into
+#               the Ready List. The  processes are dispatched into the
+#               ready list in various staggered increments of
+#               variable named HOLD_UP 0, 5, 10, 15, 20 and, 25 time units.
 #
-# Author:      uniteduser
 #
-# Created:     29/03/2013
-# Copyright:   (c) uniteduser 2013
-# Licence:     <your licence>
+# Author:      Ngibuini, David and Breton, Matthew
+#
+# Created:     27/03/2013
+# Copyright:   (c) Ngibuini 2013
+# Licence:     Freeware
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python
 
+from os.curdir import spawn
+
 def main():
-        #this is where the  processes are dispatched into the
-        #ready list in various staggered increments of
-        # variable named HOLDUP 0, 5, 10, 15, 20 and, 25
 
-        if(isNewProc == true):
-            counter = 0; counter = counter+1
+        counter = 0
+        real_arrival_time = 0.0
+        ReadyList = []
 
-            arrival_time = clock() + hold_up
-            queue.append(myProcess)
+        if(is_new_proc == true):
+             counter = counter+1
 
-        else:
-            print("No more items to be executed right now!")
+        real_arrival_time = arrival_time + hold_up
+        list.append(new)
+
+
+
 
 pass
 
